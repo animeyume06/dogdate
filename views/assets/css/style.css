@@ -1,0 +1,1062 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    margin: 0;
+}
+
+.wrapper {
+    display: block;
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.row {
+    max-width: 100vw;
+}
+
+/* ===========================================
+    FOOTER
+    =========================================== */
+    footer {
+        background: #B60426;
+        color: white;
+        font-weight: 300;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        padding: 25px 8vw 10px 8vw;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer a:hover {
+        color: #F0CCD3;
+    }
+
+    footer .fab {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+/* ===========================================
+    MAIN NAVIGATION
+    =========================================== */
+
+    .bg-light {
+        background-color: #B60426!important;
+    }
+
+    .navbar {
+        padding: 1px 2px!important;
+    }
+
+    .white-link {
+        color: white;
+        margin: 0 5px;
+    }
+
+    .white-link:hover {
+        color: #F0CCD3;
+        text-decoration: none;
+    }
+
+    .dropdown-item:hover {
+        text-decoration: underline;
+    }
+
+    #main-nav-wrapper {
+        background: white;
+    }
+
+    #logo-wrapper {
+        width: 135px;
+        padding: 15px 0 15px 0;
+        margin: 0 auto;
+    }
+
+    #logo {
+        width: 135px;
+    }
+
+    #main-nav-links {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+
+    #main-nav-links ul li {
+        display: inline-block!important;
+    }
+
+    #main-nav-links a {
+        margin: 0 30px;
+        color: #231F20;
+    }
+
+    #main-nav-links a:hover {
+        color: #B60426;
+        text-decoration: none;
+    }
+
+/* ===========================================
+    SIDEBAR
+    =========================================== */
+
+    #sidebar {
+        width: 250px;
+        top: 0;
+        left: -250px;
+        height: 100vh;
+        background: white;
+        color: #231F20;
+        transition: all 0.3s;
+        position: fixed;
+        z-index: 999;
+    }
+
+    #sidebar.active {
+        left: 0;
+    }
+
+    .nav-item-active a {
+        color: #B60426!important;
+        text-decoration: none;
+        border-bottom: 2px solid #B60426;
+    }
+
+    #sidebar .sidebar-header {
+        padding: 20px;
+    }
+
+    #sidebar ul.components {
+        padding: 20px 0;
+    }
+
+    #sidebar ul li a {
+        padding: 10px;
+        font-size: 1.1em;
+        display: block;
+        color: #231F20;
+    }
+
+    #sidebar ul li a:hover {
+        color: #231F20;
+        background: #F2F2F2;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .overlay.active {
+        display: block;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 998;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #dismiss {
+        font-size: 30px;
+        color: #B60426;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+    }
+
+/* ===========================================
+    BANNER
+    =========================================== */
+    .banner {
+        width: 100%;
+        height: 55vh;
+        background-image: url('/assets/files/img-slider011.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        position: relative;
+        align-items: center;
+        color: white;
+    }
+
+/* ===========================================
+    HEADER
+    =========================================== */
+
+    .header-wrapper {
+        background: #B60426;
+        color: white;
+    }
+
+/* ===========================================
+    SEARCH BAR
+    =========================================== */
+
+    .search-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 8px;
+        margin-right: 16px;
+        margin-left: 0;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .search-container button:hover {
+        background: #ccc;
+    }
+
+    .search-container input[type=text] {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: 17px;
+        border: solid;
+        border-width: 2px;
+        width: 300px;
+        height: 37px;
+        border-color: #ddd;
+    }
+
+/* ===========================================
+    TIMELINE
+    =========================================== */
+
+    block-content p {
+    	font-size:1.1em;
+    	line-height:1.5;
+    	-webkit-font-smoothing:antialiased;
+    	margin:0 auto 1em auto;
+    }
+
+    .l-block-spacing {
+        min-height:80vh;
+    	padding-top:2em;
+    }
+
+    .l-contained {
+    	max-width:1000px;
+    	margin-left:auto;
+    	margin-right:auto;
+
+    	padding-left:1em;
+    	padding-right:1em;
+    }
+
+    #timeline-list-elem {
+        display: none;
+    }
+
+    .timeline-list {
+
+    	padding-bottom: 1em;
+        padding-left: 5px;
+        padding-right: 5px;
+    	position: relative;
+    	max-width:700px;
+    	margin:0 auto;
+        -webkit-animation: reveal 0 0 ease both 1;
+             animation: reveal 0 0 ease both 1;
+
+
+    }
+
+    .timeline-list:before {
+        content: "";
+        border-left: 5px solid #CCC;
+        left: -0.3em;
+        top: 2em;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        -webkit-transform-origin: 0 0;
+                transform-origin: 0 0;
+        -webkit-animation: scaleVertical 3s 1s ease both 1;
+                animation: scaleVertical 3s 1s ease both 1;
+    }
+
+    .timeline-list:after {
+        content: "";
+        clear: both;
+        position: absolute;
+        bottom: 0px;
+        left: -0.8em;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: none repeat scroll 0% 0% #DDD;
+        border: 5px solid #DDD;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        -webkit-animation: revealScaleUp 0.75s 2.82s ease both 1;
+                animation: revealScaleUp 0.75s 2.82s ease both 1;
+    }
+
+    .timeline-list li {
+
+    	margin:0 0 3em 0;
+    	padding:0 2em 0em 2em;
+        position: relative;
+
+    }
+
+    .timeline-list li:nth-child(odd):before {
+
+    	content: "";
+    	position: absolute;
+    	top: 0px;
+    	left: -1.45em;
+    	width: 30px;
+    	height: 30px;
+    	border-radius: 50%;
+    	background: none repeat scroll 0% 0% white;
+    	border: 5px solid #B60426;
+        -webkit-animation: revealScaleUp 0.75s 0s ease both 1;
+            animation: revealScaleUp 0.75s 0s ease both 1;
+    }
+
+    .timeline-list li:nth-child(even):before {
+
+    	content: "";
+    	position: absolute;
+    	top: 0px;
+    	left: -1.45em;
+    	width: 30px;
+    	height: 30px;
+    	border-radius: 50%;
+    	background: none repeat scroll 0% 0% white;
+    	border: 5px solid #501809;
+        -webkit-animation: revealScaleUp 0.75s 0s ease both 1;
+            animation: revealScaleUp 0.75s 0s ease both 1;
+    }
+
+
+
+
+    .timeline-list li .timeline-content {
+        -webkit-animation: revealFromLeft 0.5s 0s ease both 1;
+              animation: revealFromLeft 0.5s 0s ease both 1;
+    }
+
+
+    .timeline-list li:nth-child(1):before {
+        -webkit-animation-delay: 0.85s;
+              animation-delay: 0.85s;
+    }
+
+    .timeline-list li:nth-child(1) .timeline-content {
+        -webkit-animation-delay: 0.85s;
+              animation-delay: 0.85s;
+    }
+    .timeline-list li:nth-child(2):before {
+        -webkit-animation-delay: 1s;
+             animation-delay: 1s;
+    }
+    .timeline-list li:nth-child(2) .timeline-content {
+        -webkit-animation-delay: 1.2s;
+                animation-delay: 1.2s;
+    }
+    .timeline-list li:nth-child(3):before {
+        -webkit-animation-delay: 1.35s;
+                animation-delay: 1.35s;
+    }
+    .timeline-list li:nth-child(3) .timeline-content {
+        -webkit-animation-delay: 1.4s;
+              animation-delay: 1.4s;
+    }
+    .timeline-list li:nth-child(4):before {
+        -webkit-animation-delay: 1.45s;
+                animation-delay: 1.45s;
+    }
+    .timeline-list li:nth-child(4) .timeline-content {
+        -webkit-animation-delay: 1.5s;
+                animation-delay: 1.5s;
+    }
+
+    @-webkit-keyframes revealFromLeft {
+      0% {
+        -webkit-transform: translateX(-1em);
+                transform: translateX(-1em);
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    }
+
+    @keyframes revealFromLeft {
+      0% {
+        -webkit-transform: translateX(-1em);
+                transform: translateX(-1em);
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+      }
+    }
+    @-webkit-keyframes reveal {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes scaleVertical {
+      0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+      }
+    }
+    @keyframes scaleVertical {
+      0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+      }
+      100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+      }
+    }
+    @-webkit-keyframes revealScaleUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+    @keyframes revealScaleUp {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+      }
+      50% {
+        opacity: 1;
+        -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+    }
+
+    .l-contained ul {
+        list-style-type: none;
+    }
+
+/* ===========================================
+    FORM
+    =========================================== */
+
+    .form-wrapper {
+        background: #F2F2F2;
+        border-radius: 8px;
+        border-color: #707070;
+        border-style: solid;
+        border-width: 1px;
+        padding: 100px 40px;
+        max-width: 470px;
+        margin: 65px auto;
+    }
+
+    .form-btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    small a {
+        color:#B60426;
+    }
+
+    small a:hover {
+        color:#B60426;
+    }
+
+    textarea[name=message] {
+        resize: none;
+    }
+
+
+/* ===========================================
+    DOG PAGE
+    =========================================== */
+
+    #dog-page-container {
+        position: relative;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #dog-nav-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .add-dog-btn-wrapper {
+        margin-top: 95px;
+        width: 181px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    #add-dog-btn:hover {
+        color: #B60426;
+    }
+
+    #form-mate-fee {
+        width: 95px;
+        display: inline;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    #dog-img-preview-wrapper {
+        width: 375px;
+        height: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        border-radius: 8px;
+    }
+
+    #dog-img-preview {
+        object-fit: cover;
+        height: inherit;
+        width: inherit;
+        border-radius: 8px;
+    }
+
+    .table-style {
+        width: 100%;
+    }
+
+    #dog-post-table td {
+        padding: 5px 5px 5px 0;
+    }
+
+    .table-style td:first-child {
+        width: 120px;
+        font-weight: 600;
+    }
+
+
+    textarea[name=dog-description] {
+        height: 100px;
+        resize: none;
+    }
+
+    .profile-link {
+        margin-top: 25px;
+    }
+
+/* ===========================================
+    POSTED CARDS
+    =========================================== */
+
+    #posted-card {
+        background: #E8E7E7;
+        border-radius: 8px;
+        border: none;
+        position: relative;
+    }
+
+    #dog-name {
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+    #dog-img-wrapper {
+        margin: auto;
+        width: 445px;
+        height: 445px;
+        border-radius: 8px;
+    }
+
+
+/* ===========================================
+    UPLOAD DOG IMG FILE BUTTON
+    =========================================== */
+
+    .inputfile {
+    	width: 0.1px;
+    	height: 0.1px;
+    	opacity: 0;
+    	overflow: hidden;
+    	position: absolute;
+    	z-index: -1;
+    }
+
+    .inputfile + label {
+        font-size: 15px;
+        font-weight: 4;
+        color: #B60426;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+
+
+    .inputfile:focus + label, .inputfile + label:hover {
+        text-decoration: underline;
+    }
+
+    .inputfile:focus + label {
+    	outline: 1px dotted #000;
+    	outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    .inputfile + label * {
+	    pointer-events: none;
+    }
+
+/* ===========================================
+    USER PROFILE PAGE
+    =========================================== */
+
+    #member-since-right {
+        display: none;
+    }
+
+    #profile2 {
+        display: none;
+    }
+
+
+/* ===========================================
+    BREEDER PROFILE PAGE
+    =========================================== */
+
+    #breeder-view-info {
+        max-width: 475px;
+        background: #E8E7E7;
+        border-radius: 8px;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #breeder-img-wrapper {
+        height: 280px;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #breeder-img {
+        object-fit: cover;
+        height: inherit;
+        width: inherit;
+        border-radius: 140px;
+    }
+
+    #userMessage {
+        width: 100%;
+        height: 150px;
+        resize: none;
+    }
+
+    #edit-profile-bio {
+        height: 100px;
+        resize: none;
+    }
+
+    .edit-headers {
+        font-weight: bold;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: #707070;
+        width: 100%;
+
+    }
+
+/* ===========================================
+    STYLING
+    =========================================== */
+    #dog-tie-img {
+        width: 50vw;
+        max-width: 714px;
+    }
+
+    .bold {
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    #header-title {
+        margin-bottom: 0;
+        padding: 20px 0 25px 0;
+    }
+
+    .header {
+        margin-bottom: 0;
+        padding: 17px 0 20px 0;
+    }
+
+    .red {
+        color: #B60426;
+    }
+
+    .brown {
+        color: #501809;
+    }
+
+    .light-grey {
+        color: #9B9B9B;
+    }
+
+    hr {
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: #707070;
+        width: 100%;
+        margin-top: -1px;
+    }
+
+
+    .plus-minus {
+        float: right;
+    }
+
+    .form-label {
+        font-weight: 600;
+        padding-top: 6px;
+    }
+
+    .breeder-margin-top {
+        margin-top: 3rem;
+    }
+
+    .breeder-margin-bottom{
+        margin-bottom: 3rem;
+    }
+
+
+/* ===========================================
+    BUTTONS
+    =========================================== */
+
+    #sidebarCollapse {
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        visibility: hidden;
+    }
+
+    .white-outline-btn {
+        border-color: white;
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 2px;
+        color: white;
+        padding: 10px 30px;
+    }
+
+    .white-outline-btn:hover {
+        background: white;
+        color: #B60426;
+    }
+
+    .red-outline-btn {
+        border-color: #B60426;
+        border-radius: 8px;
+        border-style: solid;
+        border-width: 2px;
+        color: #B60426;
+        padding: 10px 30px;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .red-outline-btn:hover {
+        background: #B60426;
+        color: white;
+    }
+
+    .lg-text-btn {
+        font-size: 20px;
+    }
+
+    .red-btn {
+        background-color: #B60426;
+        color: white;
+    }
+
+    .red-btn:hover {
+        background: #6F0116;
+        color: white;
+    }
+
+    #dog-post-btn {
+        min-width: 100px;
+        display: block;
+        margin-left: auto;
+    }
+
+    .small-red-btn {
+        border-radius: 2.25rem;
+        font-size: 13px;
+        padding: 1px 9px;
+    }
+
+    #contact-profile-btn {
+        right: 0;
+        top: 56px;
+        margin-right: 15px;
+    }
+
+    #edit-profile-btn {
+        right: 0;
+        top: 104px;
+        margin-right: 15px;
+    }
+
+    .red-link:hover {
+        color: #B60426;
+    }
+
+    #change-profileimg-btn {
+        width: 142px;
+    }
+
+    #change-password-btn {
+        width: 142px;
+    }
+
+    #password-reset-btn {
+        color: #212429;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+        background-color: white;
+    }
+
+    #password-reset-btn:hover {
+        color: #212429;
+        text-decoration: none;
+    }
+
+
+
+
+@media (max-width: 1000px) {
+    #sidebarCollapse {
+        color: white;
+        background: rgba(0, 0, 0, 0);
+        visibility: visible;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    .banner .banner-text h2 {
+        font-size: 20px;
+        width: 50vw;
+    }
+
+    .banner .banner-text h6 {
+        font-size: 12px;
+    }
+
+    .nav-item-active a {
+        color: #B60426!important;
+        text-decoration: none;
+        background: #E8E7E7!important;
+        border-bottom: none;
+    }
+
+    #profile1 {
+        display: none;
+    }
+
+    #edit-profile-btn {
+        right: 0;
+        top: 57px;
+        margin-right: 15px;
+    }
+
+    #profile2 {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    #form-topspacing {
+        margin-top: 15px;
+    }
+
+    #contact-corgi-img {
+        display: none;
+    }
+
+    #dog-img-wrapper {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 890px){
+    #join-header-btn {
+        margin-top: 20px;
+    }
+
+    #posted-card {
+        padding: 30px 30px;
+    }
+
+}
+
+@media (max-width: 767px){
+    #breeder-view-info {
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+    .container {
+        width: 90%;
+    }
+
+    #dog-post-card {
+        padding: 30px 30px
+    }
+
+    .mt-575 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .profile-right-wrapper {
+        text-align: center;
+    }
+}
+
+@media (max-width: 555px){
+    #new-search-wrapper {
+        text-align: center;
+    }
+
+    .add-dog-btn-wrapper {
+        margin-top: 175px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .search-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 150px;
+    }
+
+    .search-container button {
+        float: none;
+        margin-right: 0;
+        margin-left: -6px;
+        margin-top: 100px
+    }
+
+@media (max-width: 500px){
+    #dog-img-preview-wrapper {
+        width: 100%;
+    }
+
+    #breeder-img-wrapper {
+        width: 258px;
+        height: 258px;
+    }
+
+    #member-since-left {
+        display: none;
+    }
+
+    #member-since-right {
+        display: block;
+    }
+}
+
+@media (max-width: 450px){
+    .banner {
+        background-image: url('/assets/files/img-slider012.jpg');
+    }
+
+    #dog-tie-img {
+        display: none;
+    }
+
+    .header-wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #header-title {
+        font-size: 20px;
+    }
+
+    #dog-img-wrapper {
+        height: 310px;
+    }
+
+    .search-container input[type=text] {
+        width: 75vw;
+    }
+
+
+}

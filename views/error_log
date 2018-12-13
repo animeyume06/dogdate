@@ -1,0 +1,25 @@
+[11-Dec-2018 11:38:55 America/Vancouver] PHP Fatal error:  Uncaught Error: Call to undefined function is_current() in /home/dogdatejoannecar/public_html/elements/nav.php:28
+Stack trace:
+#0 /home/dogdatejoannecar/public_html/views/contact.php(5): require_once()
+#1 {main}
+  thrown in /home/dogdatejoannecar/public_html/elements/nav.php on line 28
+[11-Dec-2018 11:39:19 America/Vancouver] PHP Fatal error:  Uncaught Error: Call to undefined function is_current() in /home/dogdatejoannecar/public_html/elements/nav.php:28
+Stack trace:
+#0 /home/dogdatejoannecar/public_html/views/contact.php(5): require_once()
+#1 {main}
+  thrown in /home/dogdatejoannecar/public_html/elements/nav.php on line 28
+[11-Dec-2018 11:40:15 America/Vancouver] PHP Fatal error:  Uncaught Error: Call to undefined function is_current() in /home/dogdatejoannecar/public_html/elements/nav.php:28
+Stack trace:
+#0 /home/dogdatejoannecar/public_html/views/contact.php(5): require_once()
+#1 {main}
+  thrown in /home/dogdatejoannecar/public_html/elements/nav.php on line 28
+[11-Dec-2018 11:40:21 America/Vancouver] PHP Fatal error:  Uncaught Error: Call to undefined function is_current() in /home/dogdatejoannecar/public_html/elements/nav.php:28
+Stack trace:
+#0 /home/dogdatejoannecar/public_html/views/home.php(5): require_once()
+#1 {main}
+  thrown in /home/dogdatejoannecar/public_html/elements/nav.php on line 28
+[11-Dec-2018 11:40:21 America/Vancouver] PHP Fatal error:  Uncaught Error: Call to undefined function is_current() in /home/dogdatejoannecar/public_html/elements/nav.php:28
+Stack trace:
+#0 /home/dogdatejoannecar/public_html/views/home.php(5): require_once()
+#1 {main}
+  thrown in /home/dogdatejoannecar/public_html/elements/nav.php on line 28
